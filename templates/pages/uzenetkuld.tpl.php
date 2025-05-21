@@ -11,8 +11,7 @@
             <br/><br/>
 			<textarea class="inputmezo form-control" id="szoveg" name="szoveg" cols="40" rows="10" required minlength="20"></textarea><b>Üzenet (minimum 20 karakter)</b>
 			<br/><br/>
-			<a href="?oldal=kuldes">
-            <input class="gomb form-control" id="kuld" type="submit" value="Küld"></a>
+            <input class="gomb form-control" id="kuld" type="submit" value="Küld">
             </div>
     </form>
 	</div>
