@@ -29,7 +29,7 @@
 
 <div class="kozepre">			
 <a href="images/egyeb/tura3.jpeg" data-lightbox="tura">
-<img class="img-fluid kozepe" src="images/egyeb/tura3.jpeg" title="Olcsó János túrázni megy!" alt="Olcsó János túrázni megy!" class="nagy"/>
+<img class="img-fluid kozepes" src="images/egyeb/tura3.jpeg" title="Olcsó János túrázni megy!" alt="Olcsó János túrázni megy!" class="nagy"/>
 </a>				
 </div>
 

@@ -3,7 +3,6 @@
 		print_r($_POST);
 		echo "</pre>";
 				
-		
 		$re1 = '/^[A-Za-z]{8,20}$/';	
 		$kimenet.= "Név: {$_POST['nev']}";
 		if(!isset($_POST['nev']) || !preg_match($re1,$_POST['nev']))
@@ -34,6 +33,6 @@
 		}
 		$kimenet.= "<br>";
 	
-		echo $kimenet;
+		echo '<p>' . $kimenet . '</p>';
 	?>
-	<p><a href="?oldal=uzenetkuld">Kattintson ide további üzenetek küldéséhez!</a></p>
+	<p><a href="?oldal=uzenetkuld">További üzenetek küldése</a></p>
