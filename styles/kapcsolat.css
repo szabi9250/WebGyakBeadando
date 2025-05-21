@@ -1,0 +1,18 @@
+body {
+	background-color: #ff9;
+}
+div {
+	width: 600px;
+	min-height: 25px;
+}
+label input, label textarea, label select, label span {
+	float: right;
+	padding: 2px;
+}
+textarea {
+	width: 350px;
+}
+input[type="submit"] {
+	float: right;
+	clear: both;
+}

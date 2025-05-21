@@ -1,0 +1,286 @@
+#content a, #content a:visited {
+	color: white;
+}
+
+#content a:hover {
+	color: orange;
+}
+
+#jelenlegi {
+	background-color: darkgray;
+}
+
+#content a:active {
+	color: red;
+}
+
+
+.cikk {
+	border-style: solid;
+	padding: 40px;
+	border-radius: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+#container {
+	background-color: #c8cacc;
+	border: 2px solid black;
+}
+
+#belso {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #c8cacc;
+	border: 2px solid black;
+	box-shadow: 5px 0px 20px black;
+}
+
+.dark-mode {
+  background-color: #121212 !important;
+}
+
+.dark-mode header {
+	background-color: #121212 !important;
+
+}
+.dark-mode h1 {
+  color: darkgray !important;
+}
+
+.dark-mode h2 {
+  color: darkgray !important;
+}
+.dark-mode h3 {
+  color: darkgray !important;
+}
+.dark-mode h4 {
+  color: darkgray !important;
+}
+.dark-mode h5 {
+  color: darkgray !important;
+}
+
+.dark-mode p,b {
+	color: #828783 !important;
+}
+
+.dark-mode footer {
+	color: gray !important;
+}
+
+
+
+#elvalaszto {
+	padding: 20px; 
+	border-bottom: 5px solid black;
+}
+
+header {
+	width: 75%;
+	height: 50px;	
+	background-color: #c8cacc;
+	text-align: right;
+}
+
+.felirat {
+	font-size: 100px;
+	padding: 70px;
+}
+
+nav {
+	background-color: #2E2E2E;
+}
+
+nav li {
+	width: 150px;
+	padding: 15px;
+	font-size: 22px;
+	color: gray;
+	display: inline-block;
+}
+
+nav>ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li:hover {
+	background-color: #0B0B3B;
+	color: white;
+	cursor: pointer;
+}
+
+.jelenlegi {
+		background-color: #c8cacc;
+
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav li.jelenlegi a, nav li:hover a {
+	color: red;
+}
+
+
+#content {
+	padding: 10px;
+}
+
+footer {
+	background-color: #2E2E2E;
+	padding: 20px;
+	text-align: center;
+	color: 	black;
+	font-weight: bold;
+}
+
+#content h1 {
+	color: #3d3d3c;
+	text-align: center;
+	font-weight: bold;
+}
+
+#content p {
+	text-align: left;
+	font-weight: bold;
+}
+
+#content pre {
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+h2 {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 135%;
+}
+
+.jobbra {
+	float: right;
+}
+
+.balra {
+	float: left;
+}
+
+.nagy {
+	width: 500px;
+}
+
+.kozepre {
+	text-align: center;
+}
+
+.kozepes {
+	width: 300px;
+	
+}
+
+.kicsi {
+	width: 200px;
+	
+}
+
+.dropdown-menu {
+	background-color: #2E2E2E !important;
+	width: 160px;
+}
+
+h3 {
+	text-align: center;
+	font-weight: bold;
+	color: #FAFAFA;
+}
+
+.darkgomb {
+  cursor: pointer;
+  background-color: #2E2E2E;
+}
+img {
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px solid black;
+	box-shadow: 5px 5px 10px gray;
+}
+
+
+q {
+	font-style: italic;
+}
+
+p {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	margin: 6px 10px;
+	text-align: justify;	
+}
+
+#content ol, #content ul {
+	margin: 0px;
+}
+
+.piros {
+	color: red;
+}
+
+.vissza {
+	clear: both;
+}
+
+a:visited {
+  color: darkgray;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.custom-width {
+  width: 75%;
+}
+
+@media (max-width: 575.98px) {
+  .custom-width {
+    width: 100% !important;
+  }
+}

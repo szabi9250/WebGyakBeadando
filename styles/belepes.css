@@ -1,0 +1,27 @@
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.inputmezo {
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.forma {
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+}

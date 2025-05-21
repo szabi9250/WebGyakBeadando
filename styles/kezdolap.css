@@ -1,0 +1,80 @@
+.blokk {
+	width: 300px;
+	height: 300px;
+	border-style: solid;
+	padding: 60px;
+	border-radius: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.ajanlasblokk {
+	width: 300px;
+	height: 300px;
+	border-style: solid;
+	padding: 40px;
+	border-radius: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+
+h4 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.bladeshop:hover {
+	background-image: url(kezdolap/bladeshop.jpg);
+	background-size: contain;
+	background-position: center; 
+}
+
+.lampa:hover {
+	background-image: url(kezdolap/lampa.jpg);
+	background-size: contain;
+	background-position: center; 
+}
+
+.kesvilag:hover {
+	background-image: url(kezdolap/kesvilag.jpg);
+	background-size: contain;
+	background-position: center; 
+}
+
+.magyarkesek:hover {
+	background-image: url(kezdolap/magyarkesek.png);
+	background-size: contain;
+	background-position: center; 
+	background-repeat: no-repeat;
+}
+
+.kesportal:hover {
+	background-image: url(kezdolap/kesportal.jpg);
+	background-size: contain;
+	background-position: center; 
+
+}
+
+.zboss:hover {
+	background-image: url(kezdolap/zboss.jpg);
+	background-size: contain;
+	background-position: center; 
+}
