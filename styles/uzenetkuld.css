@@ -12,6 +12,7 @@ input[type=submit] {
 }
 
 .inputmezo {
+  max-width: 600px;
   border: 1px solid #ccc;
   padding: 12px 20px;
   margin-left: auto;
@@ -21,7 +22,10 @@ input[type=submit] {
 }
 
 .forma {
-width: 600px;
 margin-left: auto;
 margin-right: auto;
+}
+
+a {
+	text-decoration: none !important;
 }

@@ -1,30 +1,103 @@
-#content a, #content a:visited {
-	color: white;
+@font-face {
+	font-family: 'BetuTipus';
+	src: url('Roboto-Light.ttf');
+	font-style: normal;
+	font-weight: normal;
+
 }
 
-#content a:hover {
-	color: orange;
+@media screen and (max-width: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
-#jelenlegi {
-	background-color: darkgray;
+@media (max-width: 600px) {
+  .custom-width {
+    width: 100% !important;
+  }
+}
+* {
+	font-family: BetuTipus;
+
 }
 
-#content a:active {
-	color: red;
+img {
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px solid black;
+	box-shadow: 5px 5px 10px black !important;
 }
 
-
-.cikk {
-	border-style: solid;
-	padding: 40px;
-	border-radius: 20px;
-	margin-left: 50px;
-	margin-right: 50px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+q {
+	font-style: italic;
 }
 
+p {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	margin: 6px 10px;
+	text-align: justify;	
+}
+
+h2 {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 135%;
+}
+
+h3 {
+	text-align: center;
+	font-weight: bold;
+	color: #FAFAFA;
+}
+nav {
+	background-color: #2E2E2E;
+}
+
+nav li {
+	width: 150px;
+	padding: 15px;
+	font-size: 22px;
+	color: darkgray;
+	display: inline-block;
+}
+
+nav>ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li:hover {
+	background-color: #0B0B3B;
+	cursor: pointer;
+}
+
+header {
+	width: 75%;
+	height: 50px;	
+	background-color: #c8cacc;
+	text-align: right;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav li.jelenlegi a, nav li:hover a {
+	color: darkred;
+}
+
+a:visited {
+  color: darkgray;
+}
+
+footer {
+	background-color: #2E2E2E;
+	padding: 20px;
+	text-align: center;
+	color: 	black;
+	font-weight: bold;
+}
 
 #container {
 	background-color: #c8cacc;
@@ -39,105 +112,17 @@
 	box-shadow: 5px 0px 20px black;
 }
 
-.dark-mode {
-  background-color: #121212 !important;
-}
-
-.dark-mode header {
-	background-color: #121212 !important;
-
-}
-.dark-mode h1 {
-  color: darkgray !important;
-}
-
-.dark-mode h2 {
-  color: darkgray !important;
-}
-.dark-mode h3 {
-  color: darkgray !important;
-}
-.dark-mode h4 {
-  color: darkgray !important;
-}
-.dark-mode h5 {
-  color: darkgray !important;
-}
-
-.dark-mode p,b {
-	color: #828783 !important;
-}
-
-.dark-mode footer {
-	color: gray !important;
-}
-
-
-
 #elvalaszto {
 	padding: 20px; 
 	border-bottom: 5px solid black;
 }
 
-header {
-	width: 75%;
-	height: 50px;	
-	background-color: #c8cacc;
-	text-align: right;
+#jelenlegi {
+	background-color: darkgray;
 }
-
-.felirat {
-	font-size: 100px;
-	padding: 70px;
-}
-
-nav {
-	background-color: #2E2E2E;
-}
-
-nav li {
-	width: 150px;
-	padding: 15px;
-	font-size: 22px;
-	color: gray;
-	display: inline-block;
-}
-
-nav>ul {
-	margin: 0px;
-	padding: 0px;
-}
-
-nav li:hover {
-	background-color: #0B0B3B;
-	color: white;
-	cursor: pointer;
-}
-
-.jelenlegi {
-		background-color: #c8cacc;
-
-}
-
-nav a {
-	text-decoration: none;
-}
-
-nav li.jelenlegi a, nav li:hover a {
-	color: red;
-}
-
 
 #content {
 	padding: 10px;
-}
-
-footer {
-	background-color: #2E2E2E;
-	padding: 20px;
-	text-align: center;
-	color: 	black;
-	font-weight: bold;
 }
 
 #content h1 {
@@ -157,10 +142,23 @@ footer {
 	font-weight: bold;
 }
 
-h2 {
-	font-weight: bold;
-	font-style: italic;
-	font-size: 135%;
+.cikk {
+	border-style: solid;
+	padding: 40px;
+	border-radius: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.felirat {
+	font-size: 100px;
+	padding: 70px;
+}
+
+.jelenlegi {
+	background-color: #c8cacc;
 }
 
 .jobbra {
@@ -171,12 +169,13 @@ h2 {
 	float: left;
 }
 
-.nagy {
-	width: 500px;
-}
-
 .kozepre {
 	text-align: center;
+	justify-content: center;
+}
+
+.nagy {
+	width: 500px;
 }
 
 .kozepes {
@@ -194,61 +193,31 @@ h2 {
 	width: 160px;
 }
 
-h3 {
-	text-align: center;
-	font-weight: bold;
-	color: #FAFAFA;
+.hover-szoveg {
+	color: darkgray;
+}
+
+.hover-szoveg:hover {
+	color: darkred;
 }
 
 .darkgomb {
   cursor: pointer;
   background-color: #2E2E2E;
 }
-img {
-	margin: 5px;
-	border-radius: 5px;
-	border: 1px solid black;
-	box-shadow: 5px 5px 10px gray;
-}
-
-
-q {
-	font-style: italic;
-}
-
-p {
-	margin-top: 6px;
-	margin-bottom: 6px;
-	margin: 6px 10px;
-	text-align: justify;	
-}
-
-#content ol, #content ul {
-	margin: 0px;
-}
-
-.piros {
-	color: red;
-}
 
 .vissza {
 	clear: both;
 }
 
-a:visited {
-  color: darkgray;
-}
-
-/* The sidebar menu */
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%;
+  width: 160px; 
+  position: fixed;
+  z-index: 1; 
+  top: 0;
   left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+  background-color: #111111;
   padding-top: 20px;
 }
 
@@ -260,27 +229,64 @@ a:visited {
   display: block;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
 .main {
   margin-left: 160px;
   padding: 0px 10px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 .custom-width {
   width: 75%;
 }
 
-@media (max-width: 575.98px) {
-  .custom-width {
-    width: 100% !important;
-  }
+.dark-mode {
+  background-color: #121212 !important;
 }
+
+.dark-mode header {
+	background-color: #121212 !important;
+}
+
+.dark-mode h1 {
+  color: darkgray !important;
+}
+
+.dark-mode h2 {
+  color: darkgray !important;
+}
+.dark-mode h3 {
+  color: darkgray !important;
+}
+.dark-mode h4 {
+  color: darkgray !important;
+}
+.dark-mode h5 {
+  color: darkgray !important;
+}
+
+.dark-mode p {
+	color: #828783 !important;
+}
+
+.dark-mode b {
+	color: #828783 !important;
+}
+.dark-mode footer {
+	color: gray !important;
+}
+
+.dark-mode input{
+ background-color: darkgray !important;
+}
+
+.dark-mode textarea{
+ background-color: darkgray !important;
+}
+
+.dark-mode ol {
+	color: darkgray !important;
+}
+
+.dark-mode ul {
+	color: darkgray !important;
+}
+

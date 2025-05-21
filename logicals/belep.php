@@ -2,11 +2,11 @@
 if(isset($_POST['felhasznalo']) && isset($_POST['jelszo'])) {
     try {
         // Kapcsolódás
-        $dbh = new PDO('mysql:host=localhost;dbname=labor7', 'root', '',
+        $dbh = new PDO('mysql:host=localhost;dbname=adatbazis', 'root', '',
                         array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
         $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
         
-        // Felhsználó keresése
+        // Felhasználó keresése
         $sqlSelect = "select id, csaladi_nev, utonev, jelszo from felhasznalok where bejelentkezes = :bejelentkezes";
         $sth = $dbh->prepare($sqlSelect);
         $sth->execute(array(':bejelentkezes' => $_POST['felhasznalo']));

@@ -2,7 +2,7 @@
 if(isset($_POST['felhasznalo']) && isset($_POST['jelszo']) && isset($_POST['vezeteknev']) && isset($_POST['utonev'])) {
     try {
         // Kapcsolódás
-        $dbh = new PDO('mysql:host=localhost;dbname=labor7', 'root', '',
+        $dbh = new PDO('mysql:host=localhost;dbname=adatbazis', 'root', '',
                         array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
         $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
         
@@ -23,7 +23,7 @@ if(isset($_POST['felhasznalo']) && isset($_POST['jelszo']) && isset($_POST['veze
                                  ':bejelentkezes' => $_POST['felhasznalo'], ':jelszo' => password_hash($_POST['jelszo'], PASSWORD_DEFAULT))); 
             if($count = $stmt->rowCount()) {
                 $newid = $dbh->lastInsertId();
-                $uzenet = "A regisztrációja sikeres.<br>Azonosítója: {$newid}";                     
+                $uzenet = "A regisztráció sikeres.<br>Azonosító: {$newid}";                     
                 $ujra = false;
             }
             else {

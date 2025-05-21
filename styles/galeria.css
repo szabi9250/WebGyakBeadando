@@ -1,3 +1,15 @@
+div.kep { 
+display: inline-block; 
+}
+
+div.kep img { 
+width: 200px; 
+}
+
+a {
+	text-decoration: none !important;
+}
+
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
@@ -9,20 +21,4 @@ input[type=submit] {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-}
-
-.inputmezo {
-  max-width: 600px;
-  border: 1px solid #ccc;
-  padding: 12px 20px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border-radius: 10px;
-}
-
-.forma {
-margin-left: auto;
-margin-right: auto;
-
 }
