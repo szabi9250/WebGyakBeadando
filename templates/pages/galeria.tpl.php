@@ -52,11 +52,13 @@
 <?php
 if (isset($_SESSION['login']) && $_SESSION['login'] == true) {
     echo '
-    <form>
-        <a href="?oldal=feltolt">
-            <input class="form-control" id="kuld" type="submit" value="Képek feltöltése">
-        </a>
-    </form>';
+
+
+<form action="?oldal=feltolt" method="post">
+<input class="form-control" type="submit" value="Képek feltöltése" />
+</form>
+'
+;
 } else {
     echo '<p>Kép feltöltéséhez bejelentkezés szükséges.</p>';
 }

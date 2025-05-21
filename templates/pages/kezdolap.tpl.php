@@ -41,9 +41,9 @@
 <h4 class="kozepre">Üzenet</h4>
 <h5 class="kozepre">Küldj üzenetet nekem!</h5>
 <br/><br/>
-<a href="?oldal=uzenetkuld">
+<form action="?oldal=uzenetkuld" method="post">
 <input class="kozepre" type="submit" value="Megnézem" />
-</a>
+</form>
 </div>
 </div>
 
