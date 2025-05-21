@@ -7,13 +7,15 @@ $lablec = array(
 
 $oldalak = array(
 
-		'/' => array('fajl' => 'kezdolap', 'szoveg' => 'Kezdölap', 'menun' => array(1,1)),
+		'/' => array('fajl' => 'kezdolap', 'szoveg' => 'Kezdőlap', 'menun' => array(1,1)),
 	'blog' => array('fajl' => 'blog', 'szoveg' => 'Blog', 'menun' => array(1,1)),
 	'irasok' => array('fajl' => 'irasok', 'szoveg' => 'Írások', 'menun' => array(0,0)),
 	'uzenetkuld' => array('fajl' => 'uzenetkuld', 'szoveg' => 'Üzenetküldés', 'menun' => array(1,1)),
 	'tamogatas' => array('fajl' => 'tamogatas', 'szoveg' => 'Támogatás', 'menun' => array(1,1)),
     'belepes' => array('fajl' => 'belepes', 'szoveg' => 'Belépés', 'menun' => array(1,0)),
     'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés', 'menun' => array(0,1)),
+	'galeria' => array('fajl' => 'galeria', 'szoveg' => 'Galéria', 'menun' => array(1,1)),
+	'feltolt' => array('fajl' => 'feltolt', 'szoveg' => 'Feltöltés', 'menun' => array(0,0)),
     'belep' => array('fajl' => 'belep', 'szoveg' => '', 'menun' => array(0,0)),
     'regisztral' => array('fajl' => 'regisztral', 'szoveg' => 'Regisztrálás', 'menun' => array(0,0)),
 	'novella' => array('fajl' => 'novella', 'szoveg' => 'Novella', 'menun' => array(0,0)),

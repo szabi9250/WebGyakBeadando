@@ -20,7 +20,7 @@ $cim = $ablakcim[$oldal] ?? $oldalak[$oldal]['szoveg'] ?? 'Alapértelmezett cím
 <body>
 	<div id="container">
 	<header>
-		<h2><?php if(isset($_SESSION['login'])) { ?>Bejelentkezve: <strong><?= $_SESSION['csn']." ".$_SESSION['un']." (".$_SESSION['login'].")" ?></strong><?php } ?></h2>
+		<h5><?php if(isset($_SESSION['login'])) { ?>Bejelentkezve: <strong><?= $_SESSION['csn']." ".$_SESSION['un']." (".$_SESSION['login'].")" ?></strong><?php } ?></h5>
 	</header>
 			<div id="belso" class="custom-width">
             <nav id="sidenav">
@@ -28,7 +28,7 @@ $cim = $ablakcim[$oldal] ?? $oldalak[$oldal]['szoveg'] ?? 'Alapértelmezett cím
 						
 					<?php foreach ($oldalak as $url => $oldal) { ?>
 						<?php if(! isset($_SESSION['login']) && $oldal['menun'][0] || isset($_SESSION['login']) && $oldal['menun'][1]) { ?>
-						<li<?= (($oldal == $keres) ? ' class="jelenlegi"' : '') ?>>
+						<li<?= (($oldal == $keres) ? ' class="jelenlegi" ' : '') ?>>
 							<a href="<?= ($url == '/') ? '.' : ('?oldal=' . $url) ?>">
 							<?= $oldal['szoveg'] ?></a>
 							</li>
@@ -36,7 +36,7 @@ $cim = $ablakcim[$oldal] ?? $oldalak[$oldal]['szoveg'] ?? 'Alapértelmezett cím
 						<?php } ?>
 					<?php } ?>
 
- <li class="dropdown-toggle szurke" type="button" data-bs-toggle="dropdown">
+ <li class="dropdown-toggle szurke hover-szoveg" type="button" data-bs-toggle="dropdown">
     Írások
   </li>
   <ul class="dropdown-menu">
@@ -46,7 +46,7 @@ $cim = $ablakcim[$oldal] ?? $oldalak[$oldal]['szoveg'] ?? 'Alapértelmezett cím
     <li><a href="?oldal=novella">Novella</a></li>
     <li><a href="?oldal=egyeb">Egyéb</a></li>
   </ul>
-  <li class="darkgomb" type="button" onclick="toggleDarkMode()">Dark Mode</button></li>
+  <li class="darkgomb hover-szoveg" type="button" onclick="toggleDarkMode()">Sötét mód</button></li>
   </ul>
         </nav>
         <div id="content">
