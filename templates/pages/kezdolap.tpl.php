@@ -1,6 +1,5 @@
 <h1>Kezdőlap</h1>
 <div class="balra">
-
 <div class="jobbra">
 <a href="images/kezdolap/vaszilij.jpg" data-lightbox="kezdolap">
 <img class="img-fluid kozepes" src="images/kezdolap/vaszilij.jpg" title="Vaszilij EDC" alt="Vaszilij EDC"/>
@@ -128,17 +127,36 @@
 
 <div id="elvalaszto">
 </div>
+<br>
 
 <h2>Videók és Google térkép</h2>
-<p>Youtube videó:</p>
-<div class="kozepre">
-<iframe class="img-fluid" width="500" src="https://www.youtube.com/embed/xJtZhMBMjaw" title="Bestech Beluga - Termékbemutató" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+
+<h3>Youtube videó:</h3>
+<div class="mx-auto"  style="max-width: 600px;">
+<div class="ratio ratio-16x9">
+<iframe src="https://www.youtube.com/embed/xJtZhMBMjaw" title="Bestech Beluga - Termékbemutató" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-<p>Webtárhelyen lévő videó:</p>
+</div>
+
+<div id="elvalaszto">
+</div>
+<br>
+
+<h3>Webtárhelyen lévő videó:</h3>
 <div class="kozepre">
-<video width="500" controls>
-  <source src="../video/video.mp4" type="video/mp4">
+<video width="600" class="img-fluid" controls>
+  <source src="./video/video.mp4" type="video/mp4">
 A böngésző nem támogat videókat</video>
 </div>
-<p>Késvilág helye:</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.3101405372277!2d21.61704331215835!3d47.54229227106383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47470de49ccbb22d%3A0x1631672a328f82fb!2sMalompark!5e0!3m2!1shu!2shu!4v1747758690300!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<div id="elvalaszto">
+</div>
+<br>
+
+<h3>Késvilág helye:</h3>
+<div class="mx-auto"  style="max-width: 600px;">
+<div class="ratio ratio-16x9">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.3101405372277!2d21.61704331215835!3d47.54229227106383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47470de49ccbb22d%3A0x1631672a328f82fb!2sMalompark!5e0!3m2!1shu!2shu!4v1747758690300!5m2!1shu!2shu" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
