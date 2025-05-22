@@ -54,8 +54,9 @@
 <?php
 if (isset($_SESSION['login']) && $_SESSION['login'] == true) {
     echo '
+	<p>Maximum fájlméret, felbontás, lehetséges fájl formátumok: 1MB, 1920x1080, .jpg, .png</p>
     <form action="?oldal=feltolt" method="post" enctype="multipart/form-data">
-        <input type="hidden" name="max_file_size" value="110000">                                    
+        <input type="hidden" name="max_file_size" value="1000000">                                    
         <label>Első: <input type="file" name="elso" accept="image/png, image/jpeg" required></label>  
         <label>Második: <input type="file" name="masodik" accept="image/png, image/jpeg"></label>     
         <label>Harmadik: <input type="file" name="harmadik" accept="image/png, image/jpeg"></label>   

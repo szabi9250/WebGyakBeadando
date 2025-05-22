@@ -3,7 +3,7 @@
 		print_r($_POST);
 		echo "</pre>";
 				
-		$re1 = '/^[A-Za-z]{8,20}$/';	
+		$re1 = '/^[\p{L} ]{8,20}$/u';	
 		$kimenet.= "Név: {$_POST['nev']}";
 		if(!isset($_POST['nev']) || !preg_match($re1,$_POST['nev']))
 		{

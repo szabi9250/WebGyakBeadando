@@ -1,4 +1,4 @@
-	<div class="forma center">
+	<div class="forma">
 	<form action = "?oldal=belep" method = "post">
       <fieldset>
         <h1>Bejelentkezés:</h1>
