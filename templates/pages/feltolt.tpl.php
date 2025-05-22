@@ -50,11 +50,20 @@
         echo '</ul>';
     }
 ?>
-    <form action="?oldal=feltolt" method="post"
-                enctype="multipart/form-data">
-        <input type="hidden" name="max_file_size" value="110000">                                     <!-- $_POST['max_file_size'] -->
-        <label>Első: <input type="file" name="elso" accept="image/png, image/jpeg" required></label>  <!-- $_FILES['elso'] -->
-        <label>Második: <input type="file" name="masodik" accept="image/png, image/jpeg"></label>     <!-- $_FILES['masodik'] -->
-        <label>Harmadik: <input type="file" name="harmadik" accept="image/png, image/jpeg"></label>   <!-- $_FILES['harmadik'] -->
-        <input type="submit" name="kuld">                                                             <!-- $_POST['kuld'] -->
+
+<?php
+if (isset($_SESSION['login']) && $_SESSION['login'] == true) {
+    echo '
+    <form action="?oldal=feltolt" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="max_file_size" value="110000">                                    
+        <label>Első: <input type="file" name="elso" accept="image/png, image/jpeg" required></label>  
+        <label>Második: <input type="file" name="masodik" accept="image/png, image/jpeg"></label>     
+        <label>Harmadik: <input type="file" name="harmadik" accept="image/png, image/jpeg"></label>   
+		<input type="submit" name="kuld">                                                             
       </form>    
+';
+} else {
+    echo '<p>Kép feltöltéséhez bejelentkezés szükséges.</p>';
+}
+?>
+
